@@ -1,10 +1,10 @@
-var intro=prompt("Hello, and welcome! This website is going to ask you to enter five different pieces of information: your phone number; your date of birth; your postal code; your state; and your marital status. If you're ready, please press okay.")
+var intro=alert("Hello, and welcome! This website is going to ask you to enter five different pieces of information: your phone number; your date of birth; your postal code; your state; and your marital status. If you're ready, please press okay.")
 
 var phoneNumber = prompt("Please enter your phone number.");
 var splitPhoneNumber = phoneNumber.split('-');
 if (phoneNumber.charAt(3) === '-' && phoneNumber.charAt(7) === '-') {
 	for (var i=0; i<splitPhoneNumber.length; i++) {
-		if (isFinite(parseInt(splitPhoneNumber)[i])) {
+		if (isFinite(parseInt(splitPhoneNumber[i])) {
 			var dateOfBirth=prompt("Please enter your date of birth.");
 
 			if (dateOfBirth.charAt(2) != '/' && dateOfBirth.charAt(5) != '/') {
